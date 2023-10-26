@@ -140,6 +140,7 @@ line-height: 14px;
 letter-spacing: 5px;
 margin-top: 30px ;
 cursor: pointer;
+border: 1px solid black;
 }
 
 
@@ -212,7 +213,9 @@ footer , main {
 
     footer{
 
-        margin-top: -500px;
+        margin-top: -451px;
+       
+   
     }
 
 
@@ -221,6 +224,9 @@ footer , main {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
+        overflow-x: hidden;
+        margin-top: -8px;
     }
 
     .first{
@@ -234,10 +240,12 @@ top: -650px;
     .lines{
 margin-left: 320px;
 position: relative;
-top: -80px;
+top: -86px;
 width: 24px;
 height: 16px;
 cursor: pointer;
+z-index: 15;
+
 
 
 
@@ -448,4 +456,70 @@ left: -95px;
     top: -690px;
     left: -95px;
     text-align: left;
+}
+
+.hidden1{
+    position: relative;
+    top: -20px;
+    left: 12px;
+  
+   
+    
+  
+
+
+}
+
+
+.burgermenu{
+    width: 375px;
+    height: 650px;
+   background-color: black;
+   position: absolute;
+   top: -51px;
+   left: 405px;
+   transform: translate(0%);
+   z-index: 4;
+   transition: all 1s;
+
+   
+}
+ .active{
+
+
+transform: translateX(-105%);
+transition: all 2s;
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+.titles p{
+    font-family: 'Josefin San's;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+}
+
+.titles{
+    margin-top:50px ;
+    margin-left:40px ;
+}
+.together{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 15px;
+  
 }
